@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Library</h1>
+    <button class="newBook">
+      New Book
+    </button>
+    <section class="library">
+
+    </section>
+  </main>
+  <section class="modal">
+
+    <span class="close">&times;</span>
+    <form class="modal-content">
+      <label for="title">Title: <input type="text" id="title" name='title' required></label>
+      <label for="author">Author: <input type="text" id="author" name="author" required></label>
+      <label for="pages">Page Count: <input type="number" id="pages" name="pages" required></label>
+      <label for="read"><input type="checkbox" id="read"> Read it?</label>
+      <input type="submit" class="submit">
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

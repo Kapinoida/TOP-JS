@@ -1,0 +1,153 @@
+body {
+  background-color: #3b3923;
+  color: #d17a22;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.newBook {
+  background-color: #3b3923;
+  color: #d17a22;
+  border: .1rem solid #d17a22;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+.newBook:active {
+  outline: .2rem solid #d17a22;
+  font-weight: bold;
+}
+
+.library {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85vw;
+  max-width: 100vw;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.library * {
+  margin: 0;
+  padding: 0;
+}
+
+.library div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4c061d;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: calc(33% - 3rem);
+  gap: 1rem;
+}
+
+.library div input[type='button'] {
+  background-color: #4c061d;
+  color: #d17a22;
+  border: .1rem solid #d17a22;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+.library div input[type='button']:active {
+  outline: .2rem solid #d17a22;
+  font-weight: bold;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(76,6,29,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4c061d;
+  margin: auto; /* 15% from the top and centered */
+  padding: 1rem;
+  border: 1px solid #d17a22;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 33vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  position: fixed;
+  right: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #d17a22;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hidden {
+  top: -33rem;
+}
+
+.modal-content div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .15rem;
+}
+
+.submit {
+  background-color: #4c061d;
+  color: #d17a22;
+  border: .1rem solid #d17a22;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+.submit:active {
+  outline: .2rem solid #d17a22;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: .25rem;
+}
